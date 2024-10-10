@@ -40,19 +40,12 @@ Suite Teardown   Fechar Navegador
     Quando anexo um arquivo
     Então valido o upload do arquivo
 
-05 - Verifica a Politica de Privacidade 
-    [Documentation]    Funcionalidade: Validar a Politica de Privacidade aberta em outra aba
-    [Tags]    5
-
-    Dado que acesso a home page da CAC-TAT
-    Quando clico em Politica de Privacidade
-    Então valido a politica na nova aba 
-
 06 - Seleciona os meios de contato E-mail e Telefone e envia com sucesso
     [Documentation]    Funcionalidade: Faz o envio do formulário com os campos de contato E-mail e Telefone selecionados 
     [Tags]    6
 
-    Dado que marque os campos de contato
+    Dado que preencha o formulario com todos os campos obrigatórios
+    E que marque os campos de contato
     Quando submeto o formulário 
     Então vejo a mensagem de sucesso 
 
@@ -61,6 +54,7 @@ Suite Teardown   Fechar Navegador
     ...    mas sem o numero do telefone preenchido 
     [Tags]    7
 
-    Dado que marque os campos de contato com telefone em branco
+    Dado que preencha o formulario com todos os campos obrigatórios
+    E que marque os campos de contato com telefone em branco
     Quando submeto o formulário 
     Então vejo a mensagem de alerta 

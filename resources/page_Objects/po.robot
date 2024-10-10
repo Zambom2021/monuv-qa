@@ -25,13 +25,11 @@ anexo um arquivo
     Choose File       file-upload   ${FILE} 
 
 que marque os campos de contato
-    que preencha o formulario com todos os campos obrigatórios
     Select Checkbox   id=email-checkbox
     Select Checkbox   id=phone-checkbox
     Input Text        id=phone       ${TELEFONE} 
 
 que marque os campos de contato com telefone em branco
-    que preencha o formulario com todos os campos obrigatórios
     Select Checkbox   id=email-checkbox
     Select Checkbox   id=phone-checkbox
  
