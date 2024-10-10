@@ -40,5 +40,11 @@ Suite Teardown   Fechar Navegador
     Quando anexo um arquivo
     Então valido o upload do arquivo
 
+05 - Verifica a Politica de Privacidade 
+    [Documentation]    Funcionalidade: Validar a Politica de Privacidade aberta em outra aba
+    [Tags]    5
 
+    Dado que acesso a home page da CAC-TAT
+    Quando clico em Politica de Privacidade
+    Então valido a politica na nova aba 
 
