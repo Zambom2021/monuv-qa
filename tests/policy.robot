@@ -1,6 +1,6 @@
 Language: pt-br
 *** Settings ***
-Resource   ../resources/keywords.robot 
+Resource   ../resources/asserts.robot 
 Resource   ../resources/page_Objects/po.robot
 
 Suite Setup      Abrir Navegador e acessar a pagina cac-tat
