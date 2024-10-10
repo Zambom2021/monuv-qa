@@ -30,13 +30,13 @@ jobs:
           robot -d ./results -v BROWSER:headlesschrome --variable FILE:$(pwd)/anexo.json tests
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: ./results
 
       - name: Upload screenshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-screenshots
           path: ./results/*.png
