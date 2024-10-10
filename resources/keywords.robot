@@ -5,7 +5,6 @@ Resource    page_Objects/po.robot
 Abrir Navegador e acessar a pagina cac-tat
     Open Browser    browser=${BROWSER}
     Go To    url=${URL} 
-    # Maximize Browser Window
 
 Fechar Navegador
     Close Browser
@@ -43,8 +42,8 @@ clico em Politica de Privacidade
     Click Link    xpath=//a[contains(.,'Política de Privacidade')]    
 
 valido a politica na nova aba
-    Switch Window    title=Central de Atendimento ao Cliente TAT - Política de privacidade   
-    Page Should Contain   CAC TAT - Política de privacidade
+    Switch Window            title=Central de Atendimento ao Cliente TAT - Política de privacidade   
+    Page Should Contain      CAC TAT - Política de privacidade
     Capture Page Screenshot
 
     
