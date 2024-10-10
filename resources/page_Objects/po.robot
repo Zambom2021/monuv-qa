@@ -24,15 +24,15 @@ que preencha o formulario com todos os campos obrigatórios
 anexo um arquivo
     Choose File       file-upload   ${FILE} 
 
-preencha o formulario para o produto "${produto}" e tipo de Atendimento "${tipo_Atendimento}" 
-    Input Text    id=firstName   ${NOME}
-    Input Text    id=lastName    ${SOBRENOME}
-    Input Text    id=email       ${EMAIL} 
-    Select From List By Value    id=product    ${produto}
-    Click Element     xpath=//input[@value='${tipo_Atendimento}']
+que marque os campos de contato
+    que preencha o formulario com todos os campos obrigatórios
     Select Checkbox   id=email-checkbox
-    Input Text        id=open-text-area    Testando o preenchimento do Formulario 
+    Select Checkbox   id=phone-checkbox
+    Input Text        id=phone       ${TELEFONE} 
 
-
-
+que marque os campos de contato com telefone em branco
+    que preencha o formulario com todos os campos obrigatórios
+    Select Checkbox   id=email-checkbox
+    Select Checkbox   id=phone-checkbox
+ 
     
